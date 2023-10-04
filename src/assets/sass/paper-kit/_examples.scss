@@ -220,11 +220,12 @@
 
 .presentation-subtitle {
     font-size: 1em;
-    color: #FFFFFF;
+    color: $white-color;
+    margin-bottom: 0;
 }
 
-.weight-400 {
-    font-weight: 400;
+.weight-600 {
+    font-weight: 600;
 }
 
 .category-absolute {
@@ -334,7 +335,7 @@
     }
 
     .presentation-subtitle {
-        font-size: .85em;
+        font-size: .80em;
     }
 
     .truegold-logo {
