@@ -16,8 +16,11 @@
     }
 
     .about-page-truegold-logo {
-        max-width: 90%;
-        margin-bottom: 8rem;
+        max-width: 45%;
+        margin-bottom: 6em;
+        display: block;
+        bottom: 0;
+        position: absolute;
     }
 
     .about-content {
@@ -29,6 +32,7 @@
 
 @media (max-width: 500px) {
     .about-page-truegold-logo {
-        margin-bottom: 27rem !important;
+        margin-bottom: 16em !important;
+
     }
 }

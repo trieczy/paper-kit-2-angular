@@ -16,7 +16,7 @@
     }
 
     .icon {
-        max-width: 75%;
+        max-width: 60%;
         display: block;
         bottom: 0;
         position: absolute;
@@ -29,5 +29,12 @@
 
     .announcement-content {
         min-height: 3em;
+    }
+}
+
+@media (max-width: 500px) {
+    .icon {
+        max-width: 60% !important;
+        margin-bottom: 8em !important;
     }
 }
