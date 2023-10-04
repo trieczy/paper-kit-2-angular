@@ -1,0 +1,33 @@
+.latest-news-container {
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 12px;
+    font-family: Arial;
+
+    p {
+        margin-bottom: 1rem;
+        font-size: .7rem;
+    }
+
+    .strong {
+        font-weight: 600;
+    }
+
+    .icon {
+        max-width: 75%;
+        display: block;
+        bottom: 0;
+        position: absolute;
+    }
+
+    .latest-news-content {
+        margin-top: 2%;
+        width: 90%;
+    }
+
+    .announcement-content {
+        min-height: 3em;
+    }
+}
