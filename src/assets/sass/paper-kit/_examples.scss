@@ -1,7 +1,8 @@
-.landing-alert{
+.landing-alert {
     margin-bottom: 0;
 }
-.page-header{
+
+.page-header {
     background-color: #B2AFAB;
     background-position: center center;
     background-size: cover;
@@ -22,7 +23,7 @@
     /*Center horizontaly ie */
     -ms-flex-pack: center;
 
-    .filter::after{
+    .filter::after {
         background-color: rgba(0, 0, 0, 0.5);
         content: "";
         display: block;
@@ -34,71 +35,86 @@
         z-index: 1;
     }
 
-    &.page-header-small{
+    &.page-header-small {
         min-height: 65vh !important;
         max-height: 700px;
     }
-    &.page-header-xs{
+
+    &.page-header-xs {
         min-height: 40vh !important;
     }
 
-    &.section-dark{
+    &.section-dark {
+
         .content-center,
-        .category-absolute{
+        .category-absolute {
             z-index: 1;
         }
     }
 }
-.page-header .motto{
+
+.page-header .motto {
     text-align: left;
     z-index: 3;
     color: #fff;
     position: relative;
 
 }
-.landing-section{
+
+.landing-section {
     padding: 100px 0;
     z-index: 1;
 }
-.section-buttons{
+
+.section-buttons {
     z-index: 1;
 }
-.landing-section .btn-simple{
+
+.landing-section .btn-simple {
     padding: 0;
 }
-.landing-section .column{
+
+.landing-section .column {
     padding: 0 75px 0 25px;
 }
-.team-player .img-circle, .team-player .img-thumbnail{
+
+.team-player .img-circle,
+.team-player .img-thumbnail {
     display: block;
     margin-top: 50px;
     margin-left: auto;
     margin-right: auto;
     width: 120px;
 }
-.contact-form{
-    margin-top: 30px;
-}
-.contact-form label{
-    margin-top: 15px;
-}
-.contact-form .btn{
+
+.contact-form {
     margin-top: 30px;
 }
 
-.navbar-relative{
+.contact-form label {
+    margin-top: 15px;
+}
+
+.contact-form .btn {
+    margin-top: 30px;
+}
+
+.navbar-relative {
     position: relative;
     z-index: 2;
 }
-#register-navbar a{
+
+#register-navbar a {
     color: #FFF;
 }
-.register-background .container{
+
+.register-background .container {
     margin-top: 11%;
     position: relative;
     z-index: 3;
 }
-.register-footer{
+
+.register-footer {
     bottom: 20px;
     position: absolute;
     z-index: 1;
@@ -107,59 +123,73 @@
     color: $white-color;
     left: 0;
 }
-.register-footer .fa-heart{
+
+.register-footer .fa-heart {
     color: #EB5E28;
 }
 
-.register-card label{
+.register-card label {
     margin-top: 15px;
 }
-.register-card .title{
+
+.register-card .title {
     color: #B33C12;
     text-align: center;
 }
-.register-card .btn{
+
+.register-card .btn {
     margin-top: 30px;
 }
-.register-card .forgot{
+
+.register-card .forgot {
     text-align: center;
 }
 
-.profile-content{
+.profile-content {
     position: relative;
 }
-.owner{
+
+.owner {
     text-align: center;
 }
-.owner .avatar{
+
+.owner .avatar {
     padding: 15px;
     max-width: 180px;
     margin: -85px auto 0;
     display: inline-block;
 }
-.owner .name h4{
+
+.owner .name h4 {
     margin-top: 10px;
 }
-.profile-tabs{
+
+.profile-tabs {
     margin: 50px 0;
     min-height: 300px;
 }
-#following h3{
+
+#following h3 {
     margin: 20px 0 40px 0;
 }
-#follows .follows .unfollow .checkbox{
+
+#follows .follows .unfollow .checkbox {
     margin-top: -15px;
 }
-#follows .follows h6{
+
+#follows .follows h6 {
     margin-top: 15px;
 }
-.follows hr{
+
+.follows hr {
     margin-top: 10px;
 }
-.alert h5{
+
+.alert h5 {
     // margin-bottom: 10px;
 }
-.title-brand{
+
+.title-brand {
     max-width: 730px;
     margin: 0 auto;
     position: relative;
@@ -167,7 +197,7 @@
     color: #FFFFFF;
     display: block;
 
-    .type{
+    .type {
         position: absolute;
         font-size: 20px;
         background: #132026;
@@ -180,27 +210,24 @@
     }
 }
 
-.presentation-title{
-    font-size: 8em;
-    font-weight: 700;
+.presentation-title {
+    font-size: 2em;
+    font-weight: normal;
     margin: 0;
     color: #FFFFFF;
-    // background: #fbf8ec;
-    background: -moz-linear-gradient(to bottom, #FFFFFF 35%, #4e6773 100%);
-    background: -webkit-linear-gradient(to bottom, #FFFFFF 35%,#4e6773 100%);
-    background: -ms-linear-gradient(to bottom, #FFFFFF 35%,#4e6773 100%);
-    background: -o-linear-gradient(to bottom, #FFFFFF 35%,#4e6773 100%);
-    background: linear-gradient(to bottom, #FFFFFF 35%,#4e6773 100%);
-
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
 }
-.presentation-subtitle{
-    font-size: 1.7em;
+
+.presentation-subtitle {
+    font-size: 1em;
     color: #FFFFFF;
 }
 
-.category-absolute{
+.weight-400 {
+    font-weight: 400;
+}
+
+.category-absolute {
     position: absolute;
     text-align: center;
     top: 100vh;
@@ -217,7 +244,7 @@
     }
 }
 
-.fog-low{
+.fog-low {
     position: absolute;
     left: 0;
     bottom: 0;
@@ -226,29 +253,32 @@
     width: 110%;
     opacity: .85;
 
-    img{
+    img {
         width: 100%;
     }
 
-    &.right{
+    &.right {
         margin-left: 30%;
         opacity: 1;
     }
 }
-.angular-logo{
-    max-width: 90px;
+
+.truegold-logo {
     margin: -50px auto 45px;
 
-    img{
-        width: 100%;
+    img {
+        width: auto;
+        max-height: 50px;
     }
 }
-.page-header{
-    .content-center{
+
+.page-header {
+    .content-center {
         //margin-top: 85px;
     }
 }
-.moving-clouds{
+
+.moving-clouds {
     position: absolute;
     z-index: 1;
     bottom: 0;
@@ -259,25 +289,34 @@
     animation: cloudLoop 80s linear infinite;
 }
 
-@keyframes cloudLoop{   0%{-webkit-transform:translate3d(0,0,0);transform:translate3d(0,0,0)}
-                        100%{-webkit-transform:translate3d(-50%,0,0);
-                        transform:translate3d(-50%,0,0)}
-                    }
-.following{
-    img{
+@keyframes cloudLoop {
+    0% {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0)
+    }
+
+    100% {
+        -webkit-transform: translate3d(-50%, 0, 0);
+        transform: translate3d(-50%, 0, 0)
+    }
+}
+
+.following {
+    img {
         max-width: 70px;
     }
 }
 
-.ie-background{
-    .page-header{
-        .content-center{
+.ie-background {
+    .page-header {
+        .content-center {
             top: 50%;
             left: 50%;
             position: absolute;
             -ms-transform: translate(-50%, -75%);
-            .title-brand{
-                .presentation-title{
+
+            .title-brand {
+                .presentation-title {
                     background: none;
                 }
             }
@@ -285,8 +324,20 @@
     }
 }
 
-@media (max-width: 500px){
-    .presentation-title{
-        font-size: 5em;
+@media (max-width: 500px) {
+    .truegold-logo {
+        margin: -50px auto 20px;
+    }
+
+    .presentation-title {
+        font-size: 1.5em;
+    }
+
+    .presentation-subtitle {
+        font-size: .85em;
+    }
+
+    .truegold-logo {
+        max-height: 500px;
     }
 }
