@@ -15,7 +15,7 @@
         font-weight: 600;
     }
 
-    .truegold-logo {
+    .about-page-truegold-logo {
         max-width: 90%;
         margin-bottom: 8rem;
     }
@@ -23,5 +23,12 @@
     .about-content {
         margin-top: 2%;
         width: 90%;
+    }
+}
+
+
+@media (max-width: 500px) {
+    .about-page-truegold-logo {
+        margin-bottom: 27rem !important;
     }
 }
