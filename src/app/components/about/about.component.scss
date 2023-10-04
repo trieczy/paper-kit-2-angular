@@ -1,0 +1,27 @@
+.about-container {
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 12px;
+    font-family: Arial;
+
+    p {
+        margin-bottom: 1rem;
+        font-size: .7rem;
+    }
+
+    .strong {
+        font-weight: 600;
+    }
+
+    .truegold-logo {
+        max-width: 90%;
+        margin-bottom: 8rem;
+    }
+
+    .about-content {
+        margin-top: 2%;
+        width: 90%;
+    }
+}
