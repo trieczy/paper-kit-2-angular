@@ -58,8 +58,6 @@
 
             //height: 50px;
             &:after {
-                border-bottom: 11px solid $white-color;
-                border-left: 11px solid rgba(0, 0, 0, 0);
                 border-right: 11px solid rgba(0, 0, 0, 0);
                 content: "";
                 display: inline-block;
@@ -69,8 +67,6 @@
             }
 
             &:before {
-                border-bottom: 11px solid $medium-pale-bg;
-                border-left: 11px solid rgba(0, 0, 0, 0);
                 border-right: 11px solid rgba(0, 0, 0, 0);
                 content: "";
                 display: inline-block;
