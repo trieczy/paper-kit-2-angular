@@ -1,22 +1,50 @@
-<form class="contact-us-container">
+<form
+  class="contact-us-container"
+  (ngSubmit)="onSubmit()"
+  [formGroup]="contactUsForm"
+>
   <div class="row">
     <div class="col-md-6 form-group">
-      <input type="text" class="form-control" placeholder="FIRST NAME" />
+      <input
+        type="text"
+        formControlName="fname"
+        id="fname"
+        class="form-control"
+        placeholder="FIRST NAME"
+      />
     </div>
     <div class="col-md-6 form-group">
-      <input type="text" class="form-control" placeholder="LAST NAME" />
+      <input
+        type="text"
+        formControlName="lname"
+        id="lname"
+        class="form-control"
+        placeholder="LAST NAME"
+      />
     </div>
   </div>
 
   <div class="row">
     <div class="col-md-12 form-group">
-      <input type="email" class="form-control" placeholder="EMAIL ADDRESS" />
+      <input
+        type="text"
+        formControlName="email"
+        id="email"
+        class="form-control"
+        placeholder="EMAIL ADDRESS"
+      />
     </div>
   </div>
 
   <div class="row">
     <div class="col-md-12 form-group">
-      <input type="text" class="form-control" placeholder="PHONE NUMBER" />
+      <input
+        type="text"
+        formControlName="phoneNumber"
+        id="phoneNumber"
+        class="form-control"
+        placeholder="PHONE NUMBER"
+      />
     </div>
   </div>
 
@@ -27,13 +55,30 @@
         rows="3"
         class="form-control"
         placeholder="MESSAGE"
+        formControlName="messages"
+        id="messages"
       ></textarea>
     </div>
   </div>
 
   <div class="row">
     <div class="col-md-12">
-      <button class="btn btn-brown btn-block">SUBMIT</button>
+      <div
+        class="alert alert-success"
+        role="alert"
+        *ngIf="displayNotif === true"
+      >
+        Successfully sent!
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-12">
+      <button class="btn btn-brown btn-block" type="submit" id="submit">
+        <i class="fa fa-spinner fa-spin" *ngIf="formIsSending === true"></i>
+        SUBMIT
+      </button>
     </div>
   </div>
 </form>

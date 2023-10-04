@@ -3,21 +3,17 @@
     <ngb-tabset [justify]="'left'">
       <ngb-tab title="ABOUT">
         <ng-template ngbTabContent>
-          <p>
-            Larger, yet dramatically thinner. More powerful, but remarkably
-            power efficient. With a smooth metal surface that seamlessly meets
-            the new Retina HD display.
-          </p>
+          <app-about></app-about>
         </ng-template>
       </ngb-tab>
       <ngb-tab title="LATEST NEWS">
         <ng-template ngbTabContent>
-          <p>Here is your profile.</p>
+          <app-latest-news></app-latest-news>
         </ng-template>
       </ngb-tab>
       <ngb-tab title="CONTACT US">
         <ng-template ngbTabContent>
-          <p>Here are your messages.</p>
+          <app-contact-us></app-contact-us>
         </ng-template>
       </ngb-tab>
     </ngb-tabset>

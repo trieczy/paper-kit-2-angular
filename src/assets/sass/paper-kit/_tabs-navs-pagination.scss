@@ -19,7 +19,7 @@
 .nav-tabs {
     font-size: 1em;
     font-weight: $font-weight-bold;
-    border-bottom: 2px solid #7c5d03;
+    border-bottom: 2px solid $brown-color;
 
     .nav-item {
         .nav-link {
@@ -111,18 +111,33 @@
 }
 
 .tab-content {
-    border-left: 2px solid #7c5d03;
-    border-right: 2px solid #7c5d03;
-    border-bottom: 2px solid #7c5d03;
+    border-left: 1px solid $brown-color;
+    border-right: 1px solid $brown-color;
+    border-bottom: 1px solid $brown-color;
 
     & .tab-pane {
-        height: 200px
+        height: 250px;
+        overflow-y: auto;
+        overflow-x: hidden;
     }
 
     & #tweets,
     #connections,
     #media {
         height: 100%;
+    }
+
+    ::-webkit-scrollbar {
+        width: 15px;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background-color: #7f6000;
+    }
+
+    ::-webkit-scrollbar-track {
+        background: transparent;
+        border-left: 1px solid $brown-color;
     }
 }
 

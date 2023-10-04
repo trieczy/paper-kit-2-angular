@@ -22,6 +22,7 @@
 
     /*Center horizontaly ie */
     -ms-flex-pack: center;
+    padding-top: 5em;
 
     .filter::after {
         background-color: rgba(0, 0, 0, 0.5);
@@ -340,5 +341,9 @@
 
     .truegold-logo {
         max-height: 500px;
+    }
+
+    .tab-pane {
+        height: 90%;
     }
 }
