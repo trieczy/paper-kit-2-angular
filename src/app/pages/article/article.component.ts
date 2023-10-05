@@ -10,7 +10,11 @@ export class ArticleComponent implements OnInit {
   imageList: Array<string>;
   constructor(private route: ActivatedRoute) {
     this.route.queryParams.subscribe((params) => {
-      this.imageList = params.filePaths;
+      if (params.filePaths.length > 0) {
+        this.imageList = params.filePaths;
+      } else {
+        this.imageList = [];
+      }
     });
   }
 
