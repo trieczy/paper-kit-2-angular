@@ -9,7 +9,7 @@ export class AnnouncementComponent implements OnInit {
   @Input("date") date: string;
   @Input("subTitle") subTitle: string;
   @Input("content") content: string;
-  @Input("filePaths") filePaths: Array<string>;
+  @Input("paths") paths: Array<string>;
   constructor() {}
 
   ngOnInit(): void {}
