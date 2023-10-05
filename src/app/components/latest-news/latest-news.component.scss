@@ -1,5 +1,4 @@
 .latest-news-container {
-    cursor: pointer;
     padding: 5px;
     display: flex;
     align-items: center;
@@ -34,6 +33,12 @@
         min-height: 3em;
         white-space: pre-line;
     }
+
+
+}
+
+.clickableArticle {
+    cursor: pointer;
 
     &:hover {
         background-color: #34280e;

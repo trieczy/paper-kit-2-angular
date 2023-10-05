@@ -1,10 +1,17 @@
 <div class="container">
   <div
     class="row latest-news-container"
-    [routerLink]="['/article']"
-    [queryParams]="{
-      filePaths: paths
+    [ngClass]="{
+      clickableArticle: paths?.length > 0
     }"
+    [routerLink]="paths?.length > 0 ? ['/article'] : ['/']"
+    [queryParams]="
+      paths?.length > 0
+        ? {
+            filePaths: paths
+          }
+        : ''
+    "
   >
     <div class="col-3 col-md-2">
       <img src="assets/img/feature-logo-white.png" class="icon" />

@@ -12,5 +12,7 @@ export class AnnouncementComponent implements OnInit {
   @Input("paths") paths: Array<string>;
   constructor() {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    console.log(this.paths.length);
+  }
 }
