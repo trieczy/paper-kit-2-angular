@@ -1,5 +1,9 @@
 <div class="container">
-  <div class="row latest-news-container">
+  <div
+    class="row latest-news-container"
+    [routerLink]="['/article']"
+    [queryParams]="filePaths"
+  >
     <div class="col-3 col-md-2">
       <img src="assets/img/announcement-logo-white.png" class="icon" />
     </div>

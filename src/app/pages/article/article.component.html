@@ -5,13 +5,17 @@
   >
     <div class="content-center">
       <div class="container">
-        <!-- <div class="title-brand">
+        <div class="title-brand">
           <div class="truegold-logo">
             <img src="assets/img/truegold-log-white.png" alt="" />
           </div>
-        </div> -->
-        <!-- <img src="assets/img/January 17 2023 Announcement 1-2.jpg" />
-        <img src="assets/img/January 17 2023 Announcement 2-2.jpg" /> -->
+        </div>
+        <div
+          class="article-container"
+          *ngFor="let image of imageList; let i = index"
+        >
+          <img [src]="image" [key]="i" />
+        </div>
       </div>
     </div>
   </div>

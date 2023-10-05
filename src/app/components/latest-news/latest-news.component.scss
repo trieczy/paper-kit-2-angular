@@ -26,11 +26,17 @@
     .latest-news-content {
         margin-top: 2%;
         width: 90%;
+
+
     }
 
     .announcement-content {
         min-height: 3em;
         white-space: pre-line;
+    }
+
+    &:hover {
+        background-color: #34280e;
     }
 }
 
