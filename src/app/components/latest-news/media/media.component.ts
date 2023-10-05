@@ -9,6 +9,7 @@ export class MediaComponent implements OnInit {
   @Input("date") date: string;
   @Input("subTitle") subTitle: string;
   @Input("content") content: string;
+  @Input("paths") paths: Array<string>;
   constructor() {}
 
   ngOnInit(): void {}
