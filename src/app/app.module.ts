@@ -8,13 +8,16 @@ import { AppRoutingModule } from "./app.routing";
 import { AppComponent } from "./app.component";
 
 import { DashboardComponent } from "./pages/dashboard/dashboard.component";
+
 import { NavComponent } from "./shared/nav/nav.component";
+
 import { AboutComponent } from "./components/about/about.component";
 import { LatestNewsComponent } from "./components/latest-news/latest-news.component";
 import { AnnouncementComponent } from "./components/latest-news/announcement/announcement.component";
 import { FeatureArticleComponent } from "./components/latest-news/feature-article/feature-article.component";
 import { MediaComponent } from "./components/latest-news/media/media.component";
 import { ContactUsComponent } from "./components/contact-us/contact-us.component";
+import { ArticleComponent } from "./components/article/article.component";
 
 @NgModule({
   declarations: [
@@ -27,6 +30,7 @@ import { ContactUsComponent } from "./components/contact-us/contact-us.component
     FeatureArticleComponent,
     MediaComponent,
     ContactUsComponent,
+    ArticleComponent,
   ],
   imports: [
     ReactiveFormsModule,
